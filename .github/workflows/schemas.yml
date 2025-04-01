@@ -2,8 +2,8 @@ name: 📄 Schemas
 
 on:
   push:
-    branches: [main, "release-plz-*"]
-    # branches: [main, "**"]
+    branches: [labels]
+    # branches: [labels]
 
 permissions:
   contents: write
