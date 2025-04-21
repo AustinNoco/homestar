@@ -2,7 +2,7 @@ name: 🧪 Tests and Checks
 
 on:
   push:
-    branches: [main]
+    branches: [deny.toml]
 
   pull_request:
     branches: ["**"]
